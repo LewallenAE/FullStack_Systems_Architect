@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /* Don't use style here always link a stylesheet, this is just for ease */
+
+      .box-container {
+            display: flex;             /* Makes children line up in a row */
+            justify-content: flex-start; /* or center or space-between etc */
+            align-items: center;       /* vertical alignment */
+            padding: 20px;
+        }
+
+.box {
+  border: 3px dotted black;
+  background-color: royalblue;
+  color: white;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  border-radius: 15%;
+  font-size: 25px;
+}
+
+.button {
+    border: none;
+    padding: 0;
+    background: none;
+    display: inline-block;
+    cursor: pointer; 
+ 
+}
+
+.button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3
+}
+
+
+.button:hover img{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.box_model_master{
+    transition: all 5s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 15%;
+    color: white;
+    overflow: hidden;
+
+
+}
+
+
+
+    </style>
+    
+    <title>Box-Model</title>
+</head>
+<body>
+
+    <div class="box-container">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model" target="_blank"><div class="box"> Click for more info on the Box Model! </div></a>
+        <div class="box"> Box1 </div>
+        <div class="box"> Box1 </div>
+        <div class="box"> Box1 </div>
+    </div>
+    
+    <div class="box_model_master">
+    <a href="https://www.paulirish.com/2012/box-sizing-border-box-ftw/" target="_blank"><button class="button"><img src='https://www.paulirish.com/avatar150.jpg' alt="Paul Irish">An article by Paul Irish on the Border Box Method</button></a>
+    </div>
+
+    <div>
+        <p>The Box Model In A Nutshell</p>
+        
+        <pre class="box_model_nuthsell">|<----------- margin ----------->|
+┌───────────────────────────────┐
+│         border (outer)        │
+│   ┌───────────────────────┐   │
+│   │     padding (space)   │   │
+│   │   ┌───────────────┐   │   │
+│   │   │   content     │   │   │
+│   │   └───────────────┘   │   │
+│   └───────────────────────┘   │
+└───────────────────────────────┘
+        content is the content
+        padding pushes content inward
+        border is the border around the content
+        margin pushes everything else away 
+
+</pre>
+    </div>
+</body>
+</html>

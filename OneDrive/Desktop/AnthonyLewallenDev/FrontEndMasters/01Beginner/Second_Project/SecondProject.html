@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="SecondProject.css" />
+  <title>Coffee Masters</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="coffee-masters-heading">
+    <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="Coffee Masters Logo" />
+    <div class="coffee-masters-text">Coffee Masters</div>
+  </div>
+
+  <!-- Main layout -->
+  <div class="container">
+    
+    <!-- Menu Panel -->
+    <div class="menu">
+      <div class="item-header">ITEMS</div>
+
+      <div class="order-row">
+        <div class="order-details">
+          <div class="top-line">
+            <span class="o1">1x</span>
+            <span class="Cap1">Cappuccino</span>
+          </div>
+          <ul>
+            <li>Lite foam</li>
+          </ul>
+        </div>
+        <div class="price1">$3.35</div>
+      </div>
+
+      <div class="order-row">
+        <div class="order-details">
+          <div class="top-line">
+            <span class="o1">1x</span>
+            <span class="Cap1">Cappuccino</span>
+          </div>
+          <ul>
+            <li>Lite milk</li>
+            <li>Double espresso</li>
+          </ul>
+        </div>
+        <div class="price1">$3.85</div>
+      </div>
+
+      <div class="order-row">
+        <div class="order-details">
+          <div class="top-line">
+            <span class="o1">1x</span>
+            <span class="Cap1">Croissant</span>
+          </div>
+          <ul>
+            <li>Butter</li>
+          </ul>
+        </div>
+        <div class="price1">$2.45</div>
+      </div>
+    </div>
+
+    <!-- Name and Payment Panel -->
+    <div class="payment-and-name">
+      <div class="Name">
+        <span class="label">NAME</span>
+        <input type="text" placeholder="Name for order" class="input" value="Ford Prefect"/>
+      </div>
+
+      <div class="Payment">
+        <span class="label">PAYMENT</span>
+        <input type="text" placeholder="Card number" class="input" value="1234 5678 9012 3456"/>
+        <input type="text" placeholder="CCV Number" class="input" value="001"/>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-row">
+      <span>Subtotal:</span>
+      <span>$9.65</span>
+    </div>
+    <div class="footer-row">
+      <span>Tax:</span>
+      <span>$0.82</span>
+    </div>
+    <div class="footer-row total">
+      <span>Total:</span>
+      <span>$10.47</span>
+    </div>
+
+    <button class="place-order-button">Place Order</button>
+  </footer>
+
+</body>
+</html>

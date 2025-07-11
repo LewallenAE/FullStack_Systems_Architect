@@ -1,0 +1,94 @@
+.button-hover {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+
+
+.button-hover:hover {
+
+    width: 200px;
+    height: 500px;
+    background-color: black;
+    color: lime;
+    transition: 10s;
+
+}
+
+
+
+/* Since li is a GRAND-CHILD of first-child-example, and a child of ol we have to use a different selector process.
+
+.first-child-example{
+    color: red;
+}
+
+.first-child-example:first-child {
+    color: green;
+}
+
+.first-child-example:last-child {
+    color: yellow;
+}
+
+.first-child-example:nth-child(3) {
+    background-color: coral;
+    color: white;
+}
+
+*/
+
+
+.first-child-example li{
+    color: black;
+    font-size: 50px;
+}
+
+.first-child-example li:first-child {
+    color: green;
+    font-size: 50px;
+}
+
+.first-child-example li:last-child {
+    color: yellow;
+    font-size: 50px;
+}
+
+.first-child-example li:nth-child(3) {
+    background-color: coral;
+    color: white;
+    font-size: 50px;
+}
+
+
+
+.chapter::after {
+    content: "🐸";
+    font-size: 100px;
+    text-align: center;
+    display: block;
+    color: lime;
+
+}
+
+.frog {
+  font-size: 80px;
+  animation: blink 3s infinite;
+  display: inline-block;
+}
+
+/* Blink effect (scales frog down to simulate blink) */
+@keyframes blink {
+  0%, 95%, 100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  96%, 97%, 98%, 99% {
+    transform: scaleY(0.2);
+    opacity: 0.3;
+  }
+}
+

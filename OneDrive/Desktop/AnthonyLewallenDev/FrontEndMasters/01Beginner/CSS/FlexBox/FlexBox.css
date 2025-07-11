@@ -1,0 +1,39 @@
+/* Flex on the parent not the children */
+
+.flex-container {
+    display: flex;
+   justify-content: flex-end;
+    border: 1px solid black;
+}
+
+.box1, .box2, .box3 {
+   
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.box1 {
+    background-color: black;
+}
+.box2 {
+    background-color: red;
+}
+
+.box3 {
+    background-color: blue;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}

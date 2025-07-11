@@ -1,0 +1,129 @@
+/* 
+
+
+                                            The Usage Order For CSS
+
+ -------------------------------------------------------------------------------------------------------
+| selector => opening curly bracket -> property-> colon -> value -> semi-colon -> closing curly bracket |
+ -------------------------------------------------------------------------------------------------------
+
+.(text here) for class
+#(text here) for id
+h1, p, span, etc for element
+
+
+
+
+
+                                                        -----------
+                                                       | Examples: |
+                                                        -----------
+
+
+
+
+<h1 class="use-a-dot-for-a-class"> Some text here </h1>
+
+
+
+.use-a-dot-for-a-class {
+
+    property: value;
+    color: white;
+    background-color: black;
+    padding: 2px;
+    gap: 20px;
+    display: flex;
+
+
+<h2 class="use-a-dot-for-a-class" id="use-#-for-id"> Some other text here </h2>
+
+
+
+
+
+#use-#-for-id {
+
+    property: value;
+    font-family: " 'Cascadia Code, 'Comic Sans MS', Courier, 'Courier New', Cursive, Lucida, Georgia";
+    font-weight: value;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+
+p {
+
+    property: value;
+
+}
+
+*/
+
+
+
+.container {
+
+    background-color: salmon;
+    color: dodgerblue;
+    text-decoration: dotted;
+}
+
+
+
+
+#random {
+
+    background-color: white;
+    color: black;
+    text-decoration: wavy;
+    text-transform: capitalize;
+    font-family: monospace;
+
+}
+
+
+
+h1 {
+
+    color: burlywood;
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration: overline underline;
+    text-transform:uppercase;
+    border: solid black;
+    text-align: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+p {
+
+    background-color: blue;
+    color: red;
+    display: inline-block;
+    
+}
+
+
+
+/* notice that this parent and child overrides the regular p element designation, because css knows we are talking about the p tag in the div tag*/
+
+div > p {
+    
+    color: lime;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background-color: white;
+    font-size: 1.2rem;
+}

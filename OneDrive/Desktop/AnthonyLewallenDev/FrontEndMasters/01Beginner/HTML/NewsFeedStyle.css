@@ -1,0 +1,39 @@
+ .body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+
+  .social-post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-name {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .time-stamp {
+    margin: 5px 0 10px;
+    color: gray;
+    font-size: 0.9rem;
+  }
+
+  .post-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .social-post-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+  }
+

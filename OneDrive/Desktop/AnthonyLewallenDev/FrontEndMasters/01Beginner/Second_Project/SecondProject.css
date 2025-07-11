@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+.coffee-masters-heading {
+  background-color: #441400;
+  color: beige;
+  text-align: center;
+  padding: 15px;
+}
+
+.coffee-masters-heading img {
+  height: 25px;
+}
+
+.coffee-masters-text {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* === MENU BOX === */
+.menu {
+  background-color: #fef1dd;
+  width: 500px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.item-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #5c4a32;
+}
+
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-line {
+  display: flex;
+  gap: 10px;
+}
+
+.o1 {
+  font-size: 14px;
+  color: #333;
+}
+
+.Cap1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.price1 {
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0 0 0;
+}
+
+ul li {
+  font-size: 14px;
+  color: #444;
+}
+
+/* === RIGHT PANEL === */
+.payment-and-name {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.Name, .Payment {
+  background-color: #fef1dd;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.label, .label2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #5c4a32;
+}
+
+.input {
+  border: 2px solid #5c4a32;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* === FOOTER === */
+.footer {
+  max-width: 300px;
+  margin: 50px auto;
+  padding-top: 30px;
+  font-size: 16px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.place-order-button {
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgb(208, 187, 148);
+    border: none;
+    box-shadow: rgb(175, 154, 154)   5px 5px 15px;
+}
+
+
+/*
+
+<style>
+
+.example-group {
+position: relative;
+display: inline-block;
+}
+
+.example-input {
+border-color: crimson;
+padding: 8px;
+border-radius: 5px;
+}
+
+.input-label {
+background-color:white;
+color: crimson;
+font-size: 11px;
+position: absolute;
+left: 25px;
+top: -7px;
+padding: 0 2px;
+}
+
+
+<div class="example-group">
+<label for="example" class="input-label"> Example Text</label>
+<input id="example" class="example-iput" placeholder="try typing here"/>
+</div> */

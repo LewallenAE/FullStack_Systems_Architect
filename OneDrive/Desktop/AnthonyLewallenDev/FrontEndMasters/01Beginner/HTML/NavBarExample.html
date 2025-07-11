@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+       /* 1. Make the UL flex */
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex; /* this is the magic */
+      gap: 20px;      /* spacing between nav items */
+    }
+
+    /* 2. Style the links inside LI */
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      background-color: #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .nav-link:hover {
+      background-color: #555;
+    }
+
+    /* Optional: style nav background */
+    .nav-bar {
+      background-color: #222;
+      padding: 15px;
+    }
+
+    </style>
+    <title>Nav-Bar Example</title>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="nav-link" href="/news">NewsFeed</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    
+    
+</body>
+</html>
