@@ -1,9 +1,9 @@
-let timesToRepeat = 10;   // windows key + ., to bring up emoji in windows;   ctrl + cmd + space on Mac
-let character = '💾';
-let sum = '';
-let count = 0;
+let timesToRepeat = 300;   // windows key + ., to bring up emoji in windows;   ctrl + cmd + space on Mac
+let character = '💾👀';
+//let sum = '';
+//let count = 0;
 
-while (timesToRepeat > 0) {
+/*while (timesToRepeat > 0) {
     
     timesToRepeat--;
     count ++;
@@ -12,6 +12,6 @@ while (timesToRepeat > 0) {
     
 
    
-}
+}*/
 
-console.log(sum);
+console.log("".padStart(timesToRepeat, character));
