@@ -21,7 +21,7 @@ body {
 .result-screen {
     background-color: black;
     color: white;
-    width: 467px;
+    width: 465px;
     height: 75px;
     text-align: right;
     font-size: 2.5rem;
@@ -50,7 +50,7 @@ body {
 
     background-color: var(--button-gray);
     height: 75px;
-    width: 125px;
+    width: 127px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ body {
 .clear {
     background-color: var(--button-gray);
     border: solid black .5px;
-    width: 252px;
+    width: 254px;
     height: 75px;
     font-size: 3rem;
     display: flex;
@@ -79,7 +79,7 @@ body {
 .back-space {
     background-color: var(--button-gray);
     border: solid black .5px;
-    width: 125px;
+    width: 127px;
     height: 75px;
     font-size: 3rem;
     justify-content: center;
@@ -92,7 +92,7 @@ body {
 .zero {
     background-color: var(--button-gray);
     border: solid black .5px;
-    width: 379px;
+    width: 381px;
     height: 75px;
     font-size: 3rem;
     display: flex;
