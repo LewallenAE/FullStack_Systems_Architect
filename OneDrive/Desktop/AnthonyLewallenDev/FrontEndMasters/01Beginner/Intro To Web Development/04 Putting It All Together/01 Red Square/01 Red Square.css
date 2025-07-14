@@ -1,0 +1,12 @@
+.red-square {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.js-target {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Cascadia, 'Courier New', Arial";
+}

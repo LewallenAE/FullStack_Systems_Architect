@@ -1,0 +1,136 @@
+:root {
+    --button-gray: #e0e0e0;
+    --operator-button: #f7963b;
+    --hover-color: rgb(245, 218, 169);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.calculator {
+    box-shadow: 10px 10px 50px black;
+}
+
+
+.result-screen {
+    background-color: black;
+    color: white;
+    width: 467px;
+    height: 75px;
+    text-align: right;
+    font-size: 2.5rem;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.numeric-button-row1, .numeric-button-row2, .numeric-button-row3, .numeric-button-row4, .numeric-button-row5 {
+    display: flex;
+}
+
+
+
+.seven, .eight, .nine, .four, .five, .six, .one, .two, .three {
+
+    background-color: var(--button-gray);
+    height: 75px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid black .5px;
+    font-size: 3rem;
+
+    
+}
+
+
+.clear {
+    background-color: var(--button-gray);
+    border: solid black .5px;
+    width: 252px;
+    height: 75px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.back-space {
+    background-color: var(--button-gray);
+    border: solid black .5px;
+    width: 125px;
+    height: 75px;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.zero {
+    background-color: var(--button-gray);
+    border: solid black .5px;
+    width: 379px;
+    height: 75px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.divide-button, .multiply-button, .subtraction-button, .addition-button, .equals-button {
+
+    background-color: var(--operator-button);
+    border: solid black .5px;
+    color: white;
+    display: flex;
+    height: 75px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.divide-button:hover, .multiply-button:hover, .subtraction-button:hover, .addition-button:hover, .equals-button:hover {
+
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.seven:hover, .eight:hover, .nine:hover, .four:hover, .five:hover, .six:hover, .one:hover, .two:hover, .three:hover, .zero:hover, .clear:hover, .back-space:hover {
+    background-color: var(--hover-color);
+}
+
+.button {
+    transition: transform 0.1s ease;
+}
+
+.button:active {
+    transform: scale(0.90);
+}
