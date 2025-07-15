@@ -11,20 +11,21 @@ function getNewDoggo() {
     const promise = fetch(dogApi);
     promise 
         .then(function(response) {
-            const processingPromise = response.text();
+            const processingPromise = response.json();
             return processingPromise;
         })
 
         .then(function (processedResponse) {
-            const dogObject = JSON.parse(processedResponse);
+            // const dogObject = JSON.parse(processedResponse);    using const processingPromise = response.json instead of response.text eliminates the needs to JSON.parse(variable);
+
             const img = document.createElement("img");
-            img.src = dogObject.message;
+            img.src = processedResponse.message;
             img.alt = "Random image of awesome doggo";
             dogTar.appendChild(img);
         });
 }
 
-document.getElementById('dog-btn').addEventListener("click", getNewDoggo);
+document.getElementById('dog-btn').addEventListener("click", getNewDoggo); 
 
 
 
@@ -80,3 +81,104 @@ artButton.addEventListener("click", async () => {
         console.error("Fetch failed:", error);
     }
 });
+
+
+
+// Lastly the doggo button use async await
+
+
+
+const dURL = "https://dog.ceo/api/breeds/image/random";
+const dogs = document.getElementById('dog-target2');
+
+async function getAnotherDoggo() {
+    const prom = await fetch(dURL);
+    const pResponse = await prom.json();
+    const img = document.createElement("img");
+    img.src = pResponse.message;
+    img.alt = "Another doggo";
+    dogs.appendChild(img);
+
+}
+
+// async function always return promises
+
+document.getElementById('dog-btn2').addEventListener("click", getAnotherDoggo);
+
+
+// async function always return promises
+
+async function getOccupation() {
+    return "Software Engineer";
+}
+
+console.log('a promise', getOccupation());
+
+getOccupation().then(function (occupation) {
+    console.log("The actual occupation", occupation);
+});
+
+
+
+// Another version using Await
+
+async function getOccupation() {
+    return "Software Engineer";
+}
+
+
+async function logOccu() {
+    const job = await getOccupation();
+    console.log("Awaited job: ", job);
+}
+
+logOccu();
+
+
+
+// another example
+
+async function getNames(name) {
+    return name;
+}
+
+async function getLotsOfNames () {
+    const names1 = [
+        getNames("Ant"),
+        getNames("John"),
+        getNames("Sean"),
+        getNames("Valeries")
+    ]
+    return names1;
+}
+
+async function logLotsOfNames(name) {
+    const nameList = await getLotsOfNames(name);
+    console.log("Awaited names: ", nameList);
+}
+
+logLotsOfNames();
+
+
+// anther example this one uses Promise.all
+
+async function getNames(name) {
+    return name;
+}
+
+async function getLotsOfNames () {
+    const names1 = Promise.all([
+        getNames("Ant"),
+        getNames("John"),
+        getNames("Sean"),
+        getNames("Valeries")
+    ]);
+    return names1;
+}
+
+async function logLotsOfNames(name) {
+    const nameList = await getLotsOfNames(name);
+    console.log("Awaited names: ", nameList);
+}
+
+logLotsOfNames();

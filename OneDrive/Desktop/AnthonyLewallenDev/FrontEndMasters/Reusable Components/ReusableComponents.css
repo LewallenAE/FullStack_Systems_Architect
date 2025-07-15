@@ -5,9 +5,16 @@
    Version: 1.0
    =============================================== */
 
+/*   ============ Box Model ==========
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
-
+*/
 
 
 /* @keyframes pulse {
@@ -27,6 +34,9 @@
 } 
     */
 
+
+
+    /*
 .event-button {
     font-family: "Comic Sans MS";
 
