@@ -1,0 +1,32 @@
+html {
+
+    box-sizing: border-box;
+
+}
+
+
+*, *:before, *:after {
+
+    box-sizing: inherit;
+
+}
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.ball {
+
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: solid black 1px;
+    border-radius: 50%;
+    position: relative;
+}
